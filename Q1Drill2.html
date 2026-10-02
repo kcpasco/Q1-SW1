@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rate a Movie</title>
+  <style>
+    body {
+    	background: #f4f4f4;
+    	font-family: Consolas;
+    }
+
+    form {
+    	background: white;
+    	padding: 15px;
+    	margin: 15px auto;
+    	max-width: 600px;
+    	border-radius: 8px;
+   		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    input[type="text"], textarea, button {
+    	width: 94%;
+    	padding: 15px;
+    	border: 1px solid #ccc;
+    	border-radius: 5px;
+    	text-align: center;
+
+    }
+
+    input[type="placeholder"]{
+          text-align: center;
+    }
+  
+    button {
+   		background: #333;
+    	color: white;
+    	cursor: pointer;
+    	width: 100%;
+    }
+
+    button:hover {
+    	background: #555;
+    }
+
+    section{
+    	background-color: #fff;
+    	padding: 20px;
+    	border-radius: 12px;
+    	width: 600px;
+    	margin: auto;
+    	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    p {
+    	text-align: center;
+    }
+    img{
+    	display: block;
+  		margin: 0 auto;
+    	height: 100px;
+    	width: 100px;
+   		padding: 0px;
+    }
+    h1{
+    	background-color: #333; 
+    	color: white;
+    	width: 100%;
+    	/* margin-left: 650px; */
+    	border-radius: 5px;
+		text-align: center;
+    }
+
+    a{
+    	color: #555 ;
+    }
+  </style>
+</head>
+
+<body>
+	<header>
+	    <h1>RATE A MOVIE</h1>
+	    <p>Share your top pick movie and write a review.</p>
+	</header>
+
+	<section>
+	 	<form>
+	 		<img style="float: center;" src="https://www.pngmart.com/files/23/Movie-Icon-PNG-Isolated-Pic.png"><br>
+	      <input type="text" placeholder="Movie Title">
+	      <br><br>
+	      <label><b>Genres</b> (<i>select all that apply</i>):</label>
+	     
+	   		<br>
+	        <input type="checkbox" id="action" name="genre" value="Action">
+	        <label for="action">Action</label>
+
+	        <input type="checkbox" id="comedy" name="genre" value="Comedy">
+	        <label for="comedy">Comedy</label>
+
+	        <input type="checkbox" id="drama" name="genre" value="Drama">
+	        <label for="drama">Drama</label>
+
+	        <input type="checkbox" id="fantasy" name="genre" value="Fantasy">
+	        <label for="fantasy">Fantasy</label>
+
+	        <input type="checkbox" id="sci-fi" name="genre" value="Sci-Fi">
+	        <label for="sci-fi">Sci-Fi</label>
+	
+			<br><br>
+	      	<label><b>Rating:</b></label> <br>
+	     
+	        <input type="radio" id="rate" name="rate" value="1">
+	        <label for="rate">⭐</label>
+
+	        <input type="radio" id="rate" name="rate" value="2">
+	        <label for="rate">⭐⭐</label>
+
+	        <input type="radio" id="rate" name="rate" value="3">
+	        <label for="rate">⭐⭐⭐</label>
+
+	        <input type="radio" id="rate" name="rate" value="4">
+	        <label for="rate">⭐⭐⭐⭐</label>
+
+	        <input type="radio" id="rate" name="rate" value="5">
+	        <label for="rate">⭐⭐⭐⭐⭐</label>
+	        <br><br>
+
+	      <textarea placeholder="Write your review..."></textarea>
+
+	      <button type="submit">Submit Review</button>
+	      Movie Review Tips: Click <a href="https://www.nyfa.edu/student-resources/9-tips-for-writing-a-film-review/" >here</a>
+	    </form>
+	</section>
+
+<!--Reference
+	Nyfa, & Nyfa. (2024, March 23). How to write a movie review: 10 essential tips. NYFA. https://www.nyfa.edu/student-resources/9-tips-for-writing-a-film-review/
+-->
+
+</body>
+</html>
